@@ -1,14 +1,11 @@
 const mongoose = require('mongoose');
 
-const User = require('./user');
 const Product = require('./product');
 const Order = require('./order');
 
 const MONGODB_URI_DEV = "mongodb+srv://dbAdmin:geo123@cluster0.xwh1u.mongodb.net/shopDemoDb?retryWrites=true&w=majority";
 
-const TEST_USERS_NUM = 2;
 const TEST_PRODUCTS_NUM = 100;
-const TEST_ORDERS_NUM = 4;
 
 const generateTestData = function() {
     generateTestProducts(TEST_PRODUCTS_NUM);
